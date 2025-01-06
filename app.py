@@ -10,26 +10,26 @@ def main():
 
     while True:
         if GPIO.input(17):
-             print "High"
+             print ("High")
              time.sleep(1)
         else:
-             print "low"
+             print ("low")
              time.sleep(1)
- while True:
-        if GPIO.input(18):
-             print "High"
-             time.sleep(1)
-        else:
-             print "low"
-             time.sleep(1)
- while True:
-        if GPIO.input(26):
-             print "High"
-             time.sleep(1)
-        else:
-             print "low"
-             time.sleep(1)
+    
+            if GPIO.input(18):
+                print ("High")
+                time.sleep(1)
+            else:
+                print ("low")
+                time.sleep(1)
+    
+            if GPIO.input(26):
+                print ("High")
+                time.sleep(1)
+            else:
+                print ("low")
+                time.sleep(1)
 
 
 
-    GPIO.cleanup()
+GPIO.cleanup()
